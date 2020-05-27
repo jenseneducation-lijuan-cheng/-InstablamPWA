@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/cat180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon16.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>pwa</title>
+  </head>
+  <body>
+      <header><h1>Start Instablam here!</h1>
+        <div class="line"></div>
+    </header>
+    <main class="container"> 
+      <div class="pushN">
+        <h4>push notification</h4>
+        <label class="switch"
+          ><input type="checkbox" id="togBtn" />
+          <div class="slider round">
+            <span class="on">ON</span><span class="off">OFF</span
+            >
+          </div>
+        </label>
+      </div>
+      <div class="takePhoto">
+        <video id="me">camera</video>
+        <button id="addImage" class="button green">Take photo here!</button>
+      </div>
+      <div class="photoContainer"><img src="" id="photo" /></div>
+      <div id="inputs" class="input invisible">
+     <span>brightness</span>
+      <input
+        type="range"
+        min="-100"
+        max="100"
+        value="0"
+        class="range"
+        id="brightness"
+      />
+      <span>contrast</span>
+      <input
+        type="range"
+        min="-100"
+        max="100"
+        value="0"
+        class="range"
+        id="contrast"
+      />
+      <span>sepia</span>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="range"
+        id="sepia"
+      />
+      <span>saturation</span>
+      <input
+        type="range"
+        min="-100"
+        max="100"
+        value="0"
+        class="range"
+        id="saturation"
+      />
+      <span>noise</span>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="range"
+        id="noise"
+      />
+      <span>vibrance</span>
+      <input
+        type="range"
+        min="-100"
+        max="100"
+        value="0"
+        class="range"
+        id="vibrance"
+      />
+      </div>
+     
+      <div id="rdButton" class="invisibleButton rd">
+        <button id="remove" class="button yellow">Remove photo</button>
+        <button id="download" class=" button lightgrey">Download photo</button>
+        </div>
+    </main>
+    <script src="js/caman.full.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
