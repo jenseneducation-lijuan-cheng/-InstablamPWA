@@ -3,7 +3,8 @@ self.addEventListener('install', event => {
     console.log('SW installed at: ', new Date().toLocaleTimeString());
     event.waitUntil(
         caches.open(cacheName).then((cache) => {
-            return cache.addAll(['index.html',
+            return cache.addAll(['/',
+                                'index.html',
                                 'css/style.css',
                                 'js/index.js',
                                 'offline.html'])
